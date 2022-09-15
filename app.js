@@ -20,13 +20,15 @@ function register(){
         roll+=1;
         enrollments.push(registration);
 
-
-        tname.value = "";
-        temail.value = "";
+        document.getElementById('name').value = "";
+        document.getElementById('email').value = "";
+        
 
     }else{
         console.log('email exists');
     }
+
+   
 
     console.log(enrollments);
 }
